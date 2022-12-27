@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+    <div class="header" id="header">
+        <button onclick="toggleSidebar()" class="btn_icon_header">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+        </button>
+        <div class="logo_header">
+            <h2>Meu Catalogo</h2>
+        </div>
+        <div class="navigation_header" id="navigation_header">
+            <button onclick="toggleSidebar()" class="btn_icon_header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                </svg>
+            </button>
+            <a href="#" >TCC do IOS</a>
+            <a href="#">outros sites</a>
+            <a href="#">Sobre mim</a>
+            <a href="#formu">Contato</a>
+        </div>
+    </div>
+    <div tabindex="0" class="content" onfocus="closeSidebar()" id="content">
+
+    <div class="jogos">
+        <section class="cardssss">
+            <div class="card o1" style="width: 20rem;">
+             <a href="https://klebinho27.github.io/TCC-GamerCat-/"> <img src="site2.png" class="card-img-top" alt="..."></a>
+            </div>
+            
+            <div class="card o2" style="width: 20rem;">
+                <a href="https://drive.google.com/drive/folders/10LCy2Ln5uNX_dhZNq3PpsIGwtfoLU0J2"><img src="apresentação.png" class="card-img-top" alt="..."></a>
+            </div>
+    </div>
+    
+    <div class="texto">
+        <div class="texto1"><h1>Site TCC</h1></div>
+        <div class="texto2"><h1>Apresentação</h1></div>
+    </div>
+
+
+
+    <footer class="formu" id="formu">
+        <div class="container-footer">
+            <div class="row-footer">
+              
+               
+                <div class="footer-col">
+
+        
+                    <div class="medias-socias">
+                        <h4>minhas redes socias</h4>
+                        <a href="https://github.com/klebinho27"> <i class="fa fa-github"></i> </a>
+                          <a href="https://www.instagram.com/little.kingv/"> <i class="fa fa-instagram"></i> </a>
+                          <a href="https://wa.me/5511960385618?text="> <i class="fa fa-whatsapp"></i> </a>
+                       
+                    </div>
+                    <div class="logoDaEmpresa">&copy;2023 Lucas Pereira</div> 
+                    
+                </div>
+                
+                
+            </div>
+        </div>
+      </footer>
+    
+
+          
+    </div>
+
+    <script>
+        window.addEventlistener('scroll',function(){
+            var header = document.querySelector('header');
+            header.classList.toogle('sticky',window.scrollY > 0);
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
