@@ -179,7 +179,7 @@ left: 20px;
 @media (max-width: 800px) {
     .jogos{
         position: relative;
-        top: -200px;
+        top: -250px;
     }
 
     .cardssss{
@@ -199,13 +199,15 @@ left: 20px;
     .texto1{
         position: relative;
         left: 0;
-        top: -370px;
+        top: -430px;
     }
 
     .texto2{
         position: relative;
         left: 0;
-        top: -160px;
+        top: -226px;
+        padding: 0;
+        margin: 0;
     }
 }
 @media (max-width:600px) {
@@ -218,7 +220,7 @@ left: 20px;
 /*footer*/
 .formu{
     position: relative;
-    top: -200px;
+    top: -175px;
 }
 
 footer{
